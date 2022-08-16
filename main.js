@@ -1,7 +1,7 @@
 import * as THREE from 'https://orvillechomer.github.io/miscJsFiles/THREEJS/build/three.module.js';
 import { TrackballControls } from 'https://orvillechomer.github.io/miscJsFiles/THREEJS/r120/jsm/controls/TrackballControls.js';
 import { CSS3DRenderer, CSS3DObject } from 'https://orvillechomer.github.io/miscJsFiles/THREEJS/r120/jsm/renderers/CSS3DRenderer.js';
-
+import {youtubeId1,youtubeId2,youtubId3,youtubId4} from "./params.js";
 /*
 
    Tuesday, September 22, got Pen working again!
@@ -44,10 +44,10 @@ init();
 				container.appendChild( renderer.domElement );
 
 				var group = new THREE.Group();
-				group.add( new Element( 'RRBWMCG9y6w', 0, 0, 240, 0 ) );
-				group.add( new Element( 'kGjFTzRTH3Q', 240, 0, 0, Math.PI / 2 ) );
-				group.add( new Element( 'Vi3njP7iSwA', 0, 0, - 240, Math.PI ) );
-				group.add( new Element( 'nF7cd1AWnpo', - 240, 0, 0, - Math.PI / 2 ) );
+				group.add( new Element( youtubeId1, 0, 0, 240, 0 ) );
+				group.add( new Element( youtubeId2, 240, 0, 0, Math.PI / 2 ) );
+				group.add( new Element( youtubId3, 0, 0, - 240, Math.PI ) );
+				group.add( new Element( youtubId4, - 240, 0, 0, - Math.PI / 2 ) );
 				scene.add( group );
 
 				controls = new TrackballControls( camera, renderer.domElement );
